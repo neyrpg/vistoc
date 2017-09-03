@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_extrato_list_view_dt_operacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:text="10/10/2014"
+        />
+    <TextView
+        android:id="@+id/tv_extrato_list_view_descricao_operacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_extrato_list_view_dt_operacao"
+        android:gravity="right"
+        android:textSize="@dimen/text_size_small"
+        android:text="Compra supermercado"
+        />
+
+    <TextView
+        android:id="@+id/tv_extrato_list_view_valor_operacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_extrato_list_view_descricao_operacao"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold"
+        android:text="R$200,00"
+        />
+
+</RelativeLayout>

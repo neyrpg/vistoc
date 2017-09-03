@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VistoC</string>
+    <string name="hint_nome_usuario">Usuário</string>
+    <string name="hint_senha">Senha</string>
+    <string name="btn_Acessar">Acessar</string>
+    <string name="extrato_valor_saldo">Saldo: </string>
+    <string name="extrato_filtro_5_dias">5 dias</string>
+    <string name="extrato_filtro_15_dias">15 dias</string>
+    <string name="extrato_filtro_30_dias">30 dias</string>
+    <string name="lbl_agencia">Agência</string>
+</resources>

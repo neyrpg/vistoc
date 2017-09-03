@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.giltech.vistoc.activity.ExtratoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:color/white"
+        android:layout_margin="3dp"
+        android:elevation="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_extrato_imagem_conta"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/layout_conta_circle"
+            android:elevation="2dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_extrato_imagem_conta"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_extrato_nome_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_extrato_tipo_conta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/tv_extrato_ag_conta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="2202 2002020"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--SALDO -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:elevation="2dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_extrato_saldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extrato_valor_saldo"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_extrato_valor_saldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="R$0,00"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:elevation="2dp"
+        android:background="@android:color/white"
+        >
+
+        <Button
+            android:id="@+id/btn_extrato_filtro_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_gradiente"
+            android:onClick="filtro5"
+            android:text="@string/extrato_filtro_5_dias"
+
+            />
+
+        <Button
+            android:id="@+id/btn_extrato_filtro_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_gradiente_default"
+            android:onClick="filtro15"
+            android:text="@string/extrato_filtro_15_dias" />
+
+        <Button
+            android:id="@+id/btn_extrato_filtro_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_gradiente_default"
+            android:onClick="filtro30"
+            android:text="@string/extrato_filtro_30_dias" />
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/lv_extrato_listview_extrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:elevation="2dp"
+        android:background="@android:color/white"
+        />
+    <ProgressBar
+        android:id="@+id/pb_login_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>
